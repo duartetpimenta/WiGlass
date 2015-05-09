@@ -37,15 +37,6 @@ var wiGlassApp = angular.module('WiGlass', ['ngRoute', 'ngMaterial'])
                 redirectTo: '/home'
             });
     }]);
-    /*.controller('AppCtrl', function($scope) {
-        $scope.about = 'Acerca';
-        $scope.contacts = 'Contactos';
-        $scope.gallery = 'Galeria';
-        $scope.home = 'Início';
-        $scope.test2 = function(){
-            alert('oi');
-        }
-    });*/
 
 // create a data service that provides a common controller that
 // will be shared by all views (instead of creating fresh ones for each view).
