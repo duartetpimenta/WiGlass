@@ -1,7 +1,59 @@
-.menu-icon {
+/*
+WeGlass:
+    main color: black - #000
+    alt color: orange - #FF6A00
+    font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif
+*/
+
+a {
+    color: #FF6A00;
+}
+
+body {
+    font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+}
+div.body {
+    text-align: center;
+    background: url('../img/background.jpg') top center no-repeat;
+}
+
+div.container-fluid {
+    text-align: left !important;
+    opacity: 0.94 !important;
+    padding: 2% 2% 2% 2% !important;
+}
+
+div.footer {
+    margin-top: 2%;
+    font-size: 8px;
+    text-align: center;
+}
+
+div.footer table {
+    width: 100%;
+}
+
+div.footer tr td {
+    height: 10px;
+}
+
+div.well {
+    margin-bottom: 0px !important;
+}
+
+label.bull {
+    color: #FF6A00;
+}
+
+md-content.md-default-theme{
+    opacity: 0.9 !important;
+    background-color: unset !important;
+}
+
+md-icon.menu-icon {
     color: black;
 }
 
-.menu-table {
+table.menu-table {
     border-bottom: 1px solid #aeaeae;
 }

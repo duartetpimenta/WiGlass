@@ -22,63 +22,75 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div>
-        <md-content>
-            <section layout="row" layout-sm="column" layout-align="center center">
-                <a href="index.html#/home">
-                    <img src="img/logo.png" width="128" height="121" alt="logo"/>
-                </a>
-                <table class="menu-table">
-                    <tr>
-                        <td>
-                        <td>
-                            <md-button ng-href="index.html#/home">
-                                <md-icon md-svg-src="img/home.svg" class="menu-icon"></md-icon>
-                                <span>Início</span>
-                            </md-button>
-                        </td>
-                        </td>
-                        <td>
-                            <label>&bull;</label>
-                        </td>
-                        <td>
-                            <md-button ng-href="index.html#/about">
-                                <md-icon md-svg-src="img/about.svg" class="menu-icon"></md-icon>
-                                <span>Acerca</span>
-                            </md-button>
-                        </td>
-                        <td>
-                            <label>&bull;</label>
-                        </td>
-                        <td>
-                            <md-button ng-href="index.html#/gallery">
-                                <md-icon md-svg-src="img/gallery.svg" class="menu-icon"></md-icon>
-                                <span>Galeria</span>
-                            </md-button>
-                        </td>
-                        <td>
-                            <label>&bull;</label>
-                        </td>
-                        <td>
-                            <md-button ng-href="index.html#/contacts">
-                                <md-icon md-svg-src="img/contacts.svg" class="menu-icon"></md-icon>
-                                <span>Contactos</span>
-                            </md-button>
-                        </td>
-                    </tr>
-                </table>
-            </section>
-        </md-content>
-    </div>
-    <!--
-    bootstrap fluid layout
-    (12 columns: span 10, offset 1 centers the content and adds a margin on each side)
-    -->
-    <div class="container-fluid">
-        <div class="row-fluid">
-            <div class="span10 offset1">
-                <div class="well">
-                    <div ng-view></div>
+    <div class="body">
+        <!--
+        bootstrap fluid layout
+        (12 columns: span 10, offset 1 centers the content and adds a margin on each side)
+        -->
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span10 offset1">
+                    <div class="well">
+                        <md-content>
+                            <section layout="row" layout-sm="column" layout-align="center center">
+                                <a href="index.html#/home">
+                                    <img src="img/logo.png" width="128" height="121" alt="logo"/>
+                                </a>
+                                <table class="menu-table">
+                                    <tr>
+                                        <td>
+                                            <md-button ng-href="index.html#/home">
+                                                <md-icon md-svg-src="img/home.svg" class="menu-icon"></md-icon>
+                                                <span>Início</span>
+                                            </md-button>
+                                        </td>
+                                        <td>
+                                            <label class="bull">&bull;</label>
+                                        </td>
+                                        <td>
+                                            <md-button ng-href="index.html#/about">
+                                                <md-icon md-svg-src="img/about.svg" class="menu-icon"></md-icon>
+                                                <span>Acerca</span>
+                                            </md-button>
+                                        </td>
+                                        <td>
+                                            <label class="bull">&bull;</label>
+                                        </td>
+                                        <td>
+                                            <md-button ng-href="index.html#/gallery">
+                                                <md-icon md-svg-src="img/gallery.svg" class="menu-icon"></md-icon>
+                                                <span>Galeria</span>
+                                            </md-button>
+                                        </td>
+                                        <td>
+                                            <label class="bull">&bull;</label>
+                                        </td>
+                                        <td>
+                                            <md-button ng-href="index.html#/contacts">
+                                                <md-icon md-svg-src="img/contacts.svg" class="menu-icon"></md-icon>
+                                                <span>Contactos</span>
+                                            </md-button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </section>
+                        </md-content>
+                        <div ng-view></div>
+                        <div class="footer">
+                            <table>
+                                <tr>
+                                    <td>
+                                        Powered by <a href="http://home-dpepper.rhcloud.com/">Dpepper IT Solutions</a>.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Copyright © 2015 Dpepper IT Solutions. All rights reserved.
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
