@@ -11,6 +11,7 @@ a {
 
 body {
     font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+    color: #000;
 }
 div.body {
     text-align: center;
@@ -25,16 +26,13 @@ div.container-fluid {
 
 div.footer {
     margin-top: 2%;
-    font-size: 8px;
+    font-size: 9px;
     text-align: center;
+    line-height: 10px;
 }
 
 div.footer table {
     width: 100%;
-}
-
-div.footer tr td {
-    height: 10px;
 }
 
 div.well {
