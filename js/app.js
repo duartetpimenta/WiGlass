@@ -5,15 +5,12 @@
 
 // App Module: the name AngularStore matches the ng-app attribute in the main <html> tag
 // the route provides parses the URL and injects the appropriate partial page
-var wiGlassApp = angular.module('WiGlass', ['ngRoute', 'ngMaterial'])
+var wiGlassApp = angular.module('WiGlass', ['ngRoute', 'ngMaterial', 'ngAnimate', 'ngTouch'])
     .controller('homeController', function($scope) {
         $scope.about = 'Acerca';
         $scope.contacts = 'Contactos';
         $scope.gallery = 'Galeria';
         $scope.home = 'Início';
-        $scope.test2 = function(){
-            alert('oi');
-        }
     })
     .config(['$routeProvider', function($routeProvider){
         $routeProvider.
@@ -27,7 +24,7 @@ var wiGlassApp = angular.module('WiGlass', ['ngRoute', 'ngMaterial'])
             }).
             when('/gallery',{
                 templateUrl: 'views/gallery.html',
-                controller: commonController
+                controller: galleryController
             }).
             when('/contacts',{
                 templateUrl: 'views/contacts.html',
@@ -43,10 +40,12 @@ var wiGlassApp = angular.module('WiGlass', ['ngRoute', 'ngMaterial'])
 wiGlassApp.factory("DataService", function(){
 
     // create common
-    var myCommon = new common();
+    var my_common = new common();
+    var my_gallery = new gallery();
 
     // return data object with common
     return{
-        common: myCommon
+        common: my_common,
+        gallery: my_gallery
     };
 });
