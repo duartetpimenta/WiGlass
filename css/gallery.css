@@ -42,17 +42,24 @@
     z-index: 5;
 }
 .nav li {
-    border: 5px solid #AAAAAA;
-    border-radius: 5px;
+    border: 2px solid #AAAAAA;
+    /*border-radius: 5px;*/
     cursor: pointer;
     display: inline-block;
     height: 35px;
     margin: 0 8px;
     position: relative;
     width: 50px;
+    opacity: 0.3;
 }
+
+.nav li:hover{
+    opacity:1;
+}
+
 .nav li.active {
-    border: 5px solid #FF6A00;
+    border: 2px solid #FF6A00;
+    opacity:1;
 }
 .nav li img {
     width: 100%;
@@ -61,10 +68,10 @@
 .slider {
     border: 15px solid #FFFFFF;
     border-radius: 10px;
-    height: 600px;
+    height: 525px;
     margin: 20px auto;
     position: relative;
-    width: 790px;
+    width: 690px;
 
     -webkit-perspective: 1000px;
     -moz-perspective: 1000px;

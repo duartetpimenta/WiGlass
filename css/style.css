@@ -21,13 +21,13 @@ div.body {
 
 div.container-fluid {
     text-align: left !important;
-    opacity: 0.94 !important;
-    padding: 2% 2% 2% 2% !important;
+    /*opacity: 0.94 !important;*/
+    padding: 0 2% 2% 2% !important;
 }
 
 div.footer {
     border-radius: 20px;
-    background-color: #F5F5F5;
+    background: url("../img/content.png") repeat scroll left top transparent;
     border: 1px solid #E3E3E3;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
     font-weight: bold;
@@ -44,9 +44,36 @@ div.footer table {
     width: 100%;
 }
 
-div.well {
+div.logo {
+    margin: 0 auto;
+    text-align: center;
+}
+
+div.ng-scope {
+    background: none repeat scroll 0% 0% #F5F5F5;
     border-radius: 20px !important;
+    padding: 2%;
+}
+
+div.title {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 0 2% 0;
+}
+
+div.title img {
+    margin: 1% 1% 0 1%;
+}
+
+div.well {
+    background: url("../img/content.png") repeat scroll left top transparent;
+    border-radius: 2px !important;
     margin-bottom: 0px !important;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 label.bull {
@@ -54,14 +81,14 @@ label.bull {
 }
 
 md-content.md-default-theme{
-    opacity: 0.9 !important;
     background-color: unset !important;
+    margin-top: 2%;
 }
 
 md-icon.menu-icon {
     color: black;
 }
 
-table.menu-table {
+/*table.menu-table {
     border-bottom: 1px solid #aeaeae;
-}
+}*/

@@ -4,7 +4,7 @@
 function gallery(){
     // Set of Photos
     this.photos = [];
-    for(i = 1; i <= 10; i++)
+    for(i = 1; i <= 8; i++)
         this.photos.push({src: getBaseURL() + '/img/gallery/' + i + '.jpg', desc: 'Image ' + i});
         // TODO: use library util -> this.photos.push({src: util.format('%s/img/gallery/%s.jpg', getBaseURL(), i), desc: 'Image ' + i});
 
