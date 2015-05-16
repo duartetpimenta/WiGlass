@@ -29,7 +29,7 @@
 }
 
 .nav {
-    bottom: -4px;
+    /*bottom: -4px;
     display: block;
     height: 48px;
     left: 0;
@@ -37,20 +37,20 @@
     padding: 1em 0 0.8em;
     position: absolute;
     right: 0;
-    text-align: center;
     width: 100%;
-    z-index: 5;
+    z-index: 5;*/
+    text-align: center;
 }
 .nav li {
-    border: 2px solid #AAAAAA;
-    /*border-radius: 5px;*/
+    /*border: 2px solid #AAAAAA;
+    border-radius: 5px;*/
     cursor: pointer;
     display: inline-block;
-    height: 35px;
+    /*height: 35px;*/
     margin: 0 8px;
     position: relative;
     width: 50px;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .nav li:hover{
@@ -65,9 +65,14 @@
     width: 100%;
 }
 
+.navigation_menu {
+    padding: 2% 0px 0px 0px !important;
+    text-align: center;
+}
+
 .slider {
-    border: 15px solid #FFFFFF;
-    border-radius: 10px;
+    /*border: 15px solid #FFFFFF;
+    border-radius: 10px;*/
     height: 525px;
     margin: 20px auto;
     position: relative;

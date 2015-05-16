@@ -1,1 +1,4 @@
 Showcard Gothic
+
+https://angular-ui.github.io/bootstrap/
+https://material.angularjs.org/#/

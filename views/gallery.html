@@ -7,11 +7,13 @@
     <!-- prev / next controls -->
     <a class="arrow prev" ng-click="gallery.showPrev()"></a>
     <a class="arrow next" ng-click="gallery.showNext()"></a>
-
-    <!-- extra navigation controls -->
+</div>
+<!-- extra navigation controls -->
+<div class="navigation_menu">
     <ul class="nav">
         <li ng-repeat="photo in gallery.photos" ng-class="{'active':gallery.isActive($index)}">
             <img ng-src="{{photo.src}}" alt="{{photo.desc}}" title="{{photo.desc}}" ng-click="gallery.showPhoto($index);" />
         </li>
     </ul>
+    <div>1 de 2</div>
 </div>
